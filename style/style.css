@@ -1,0 +1,27 @@
+section{
+	border: 1px solid black;
+	height: 100vh;
+}
+
+h1{
+	text-align: center;
+	margin-top: 400px;
+}
+
+
+
+li{
+	width: 150px;
+	height: 40px;
+	background-color: black;
+	display: inline-block;
+}
+
+ul{
+	display: flex;
+	width: 600px;
+	justify-content: space-between;
+	position: fixed;
+	top: 0px;
+	right: 5px;
+}

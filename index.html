@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>transform</title>
+		<link rel="stylesheet" type="text/css" href="style/reset.css">
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		
+	</head>
+
+	<body>
+
+		<ul>
+			<a href="#part1"  class="js-scrollTo" ><li> a </li> </a>
+			<a href="#part2"  class="js-scrollTo" ><li> b </li> </a>
+			<a href="#part3"  class="js-scrollTo" ><li> c </li> </a>
+		</ul>
+
+		<section id="part1">
+			<h1>Bonjour</h1>
+		</section>
+
+		<section id="part2">
+			<h1>Je m'appelle</h1>
+		</section>
+
+		<section id="part3">
+			<h1>Marie Fourment</h1>
+		</section>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+				var page = $(this).attr('href'); // Page cible
+				var speed = 750; // Durée de l'animation (en ms)
+				('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+				return false;
+			});
+		});
+	</script>
+
+		
+
+
+		
+
+	</body>
+
+</html>
